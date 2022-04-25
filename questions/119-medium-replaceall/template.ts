@@ -7,3 +7,9 @@ type ReplaceAll<
     ? S
     : `${Start}${To}${ReplaceAll<Rest, From, To>}`
   : S;
+
+// docs:
+// string : hello
+// infer Start => h
+// infer Form => e
+// infer Rest => llo
